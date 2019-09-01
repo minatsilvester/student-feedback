@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/phoenix.css") %>"/>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+          <center><img src="<%= Routes.static_path(@conn, "/images/fsftn.png") %>" alt="Phoenix Framework Logo"/ width="50%" height="50%"></center>
+      </div>
+    </header>
+      <%= render @view_module, @view_template, assigns %>
+    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>

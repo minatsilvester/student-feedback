@@ -1,0 +1,27 @@
+<h1>Show Volunteer</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @volunteer.name %>
+  </li>
+
+  <li>
+    <strong>College name:</strong>
+    <%= @volunteer.college_name %>
+  </li>
+
+  <li>
+    <strong>Phone number:</strong>
+    <%= @volunteer.phone_number %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.volunteer_path(@conn, :edit, @volunteer) %></span>
+<%# <span><%= link "Back", to: Routes.volunteer_path(@conn, :index) %></span> %>
+<center>
+  <h1>Thank you for your interest</h1>
+  <h3>We will get back to you soon</h3>
+</center>

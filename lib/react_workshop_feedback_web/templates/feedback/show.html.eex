@@ -1,0 +1,38 @@
+<h1>Show Feedback</h1>
+
+<ul>
+
+  <li>
+    <strong>Session1 feedback:</strong>
+    <%= @feedback.session1_feedback %>
+  </li>
+
+  <li>
+    <strong>Session2 feedback:</strong>
+    <%= @feedback.session2_feedback %>
+  </li>
+
+  <li>
+    <strong>Food feedback:</strong>
+    <%= @feedback.food_feedback %>
+  </li>
+
+  <li>
+    <strong>Improvement:</strong>
+    <%= @feedback.improvement %>
+  </li>
+
+  <li>
+    <strong>Next session:</strong>
+    <%= @feedback.next_session %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.feedback_path(@conn, :edit, @feedback) %></span>
+<%# <span><%= link "Back", to: Routes.feedback_path(@conn, :index) %></span> 
+<center>
+  <h3>Thank you for coming, We look forward to more learning with you</h3>
+  <h3>If you are interested in joining FSFTN then please...</h3>
+  <h3><%= link "Please Fill out this form", to: Routes.volunteer_path(@conn, :new) %></h3>
+</center>

@@ -1,0 +1,30 @@
+<h1>Listing Volunteers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>College name</th>
+      <th>Phone number</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for volunteer <- @volunteers do %>
+    <tr>
+      <td><%= volunteer.name %></td>
+      <td><%= volunteer.college_name %></td>
+      <td><%= volunteer.phone_number %></td>
+
+      <td>
+        <%= link "Show", to: Routes.volunteer_path(@conn, :show, volunteer) %>
+        <%= link "Edit", to: Routes.volunteer_path(@conn, :edit, volunteer) %>
+        <%= link "Delete", to: Routes.volunteer_path(@conn, :delete, volunteer), method: :delete, data: [confirm: "Are you sure?"] %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Volunteer", to: Routes.volunteer_path(@conn, :new) %></span>

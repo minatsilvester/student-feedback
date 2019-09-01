@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <center>
+  <h3>This Two day workshop was our effort to give the best knowledge to you in the basics of react</h3>
+  <h3>Hope you all had fun and got to learn one of the most exciting front end frameworks</h3>
+  <h3>We are listening, So please...</h3>
+  <div>
+    <a href="feedbacks/new"><h2>Give your Feedback</h2></a>
+  </div>  
+  </center>
+</body>
+</html>
